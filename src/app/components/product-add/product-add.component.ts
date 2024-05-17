@@ -35,6 +35,7 @@ export class ProductAddComponent {
   }
 
   add() {
+    
     if (this.productAddForm.valid) {
       let productModel = Object.assign({}, this.productAddForm.value);
       this.productService.add(productModel).subscribe((response) => {
